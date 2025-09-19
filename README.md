@@ -9,7 +9,7 @@
 
  Here sum(numbers) adds all values, and n is the total number of data points.
 
-2. Variance
+2.Variance
 
  Variance measures how far each value is from the mean, on average.
 
