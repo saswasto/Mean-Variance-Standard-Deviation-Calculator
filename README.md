@@ -1,67 +1,99 @@
 # Mean-Variance-Standard-Deviation-Calculator
 
-1.Mean
+# Advanced Statistics Analyzer
 
- The program calculates the mean by summing all numbers and dividing by the count:
+## Overview
 
- mean = sum(numbers) / n
+Advanced Statistics Analyzer is a Python-based data analysis tool that performs both basic and advanced statistical calculations on numerical datasets. The program accepts user input as a list of numbers and generates a detailed statistical report including central tendency, dispersion, normalization, distribution analysis, and additional utility-based insights.
 
+This project is designed for learning statistical concepts, practicing Python programming, and performing quick numerical analysis.
 
- Here sum(numbers) adds all values, and n is the total number of data points.
+## Features
 
-2.Variance
+* Calculate **Mean, Median, Mode**
+* Compute **Variance** and **Standard Deviation**
+* Find **Minimum, Maximum, and Range**
+* Calculate **Quartiles (Q1, Q3)** and **Interquartile Range (IQR)**
+* Detect **Outliers**
+* Perform **Min-Max Normalization**
+* Perform **Z-Score Normalization**
+* Generate **Frequency Distribution**
+* Calculate **Geometric Mean** and **Harmonic Mean**
+* Detect **Prime Numbers**
+* Count **Even/Odd Numbers**
+* Count **Positive/Negative/Zero Values**
+* Sort and Reverse Data
+* Calculate **Moving Average**
+* Display **Histogram**
+* Export analysis report to a text file
 
- Variance measures how far each value is from the mean, on average.
+## Technologies Used
 
- For each value x, compute (x - mean) ** 2.
+* Python 3
+* Built-in `statistics` module
+* `collections.Counter`
+* Mathematical computations using Python standard libraries
 
- Sum these squared differences and divide by n:
+## Project Structure
 
- variance = sum((x - mean) ** 2 for x in numbers) / n
+```bash
+project-folder/
+│
+├── statistics_analyzer.py
+├── stats_report.txt
+└── README.md
+```
 
+## Installation
 
- This is population variance.
+1. Install Python 3 on your system.
+2. Clone or download this repository.
+3. Open terminal or command prompt in the project folder.
 
- If you’re working with a sample rather than a whole population, divide by n - 1 instead.
+## Usage
 
-3️. Standard Deviation
+Run the Python script:
 
- The standard deviation is just the square root of the variance:
+```bash
+python statistics_analyzer.py
+```
 
- std_dev = math.sqrt(variance)
+Enter numbers separated by commas:
 
+```text
+10, 20, 30, 40, 50
+```
 
- This returns a value in the same unit as the original data, making it easier to interpret.
+The program will display a detailed statistical report.
 
-4. Handling Edge Cases
+## Example Output
 
- The function checks if the list is empty (n == 0) to avoid division by zero.
+```text
+Mean: 30
+Median: 30
+Standard Deviation: 14.1421
+Range: 40
+Outliers: []
+```
 
- You could extend it to handle user input, file input, or even multiple datasets.
+## Applications
 
-5. Enhancements
+This project can be useful for:
 
- User Input: Read numbers from the user with input() and convert to a list.
+* Data analysis practice
+* Statistical learning
+* Academic projects
+* Mini data science projects
+* Portfolio demonstration
 
- NumPy Version: Use numpy.mean, numpy.var, numpy.std for faster computation on large datasets.
+## Future Improvements
 
- Sample vs. Population: Add a parameter to choose whether to divide by n or n-1.
+* Add graphical charts using Matplotlib
+* Export reports as PDF or CSV
+* Add GUI using Tkinter
+* Support large datasets from CSV files
+* Add machine learning preprocessing tools
 
-6. Practical Uses
+## Author
 
- A. Finance: Measuring portfolio risk (standard deviation of returns).
-
- B. Quality Control: Checking product consistency.
-
- C. Data Science: Feature scaling and normalizing data.
-
-7. Summary
-
-  This program demonstrates the core statistical calculations behind a Mean–Variance–Standard Deviation Calculator.
-  Even though Python libraries can do it in one line, writing it manually helps you:
-
-  Understand how the formulas work.
-
-  Control whether you’re computing for a sample or an entire population.
-
-  Handle special cases and custom logic.
+Created by Saswato Basak
