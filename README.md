@@ -1,6 +1,5 @@
 # Mean-Variance-Standard-Deviation-Calculator
 
-# Advanced Statistics Analyzer
 
 ## Overview
 
